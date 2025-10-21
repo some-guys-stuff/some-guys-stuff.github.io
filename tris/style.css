@@ -1,0 +1,18 @@
+body
+{
+    background-color: black;
+
+}
+
+#screen
+{
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+}
+
+#screen:focus
+{
+    opacity: 1.0;
+}
+
