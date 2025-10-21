@@ -67,6 +67,12 @@ async function go()
             case 'KeyK':
                 pcState.fillStyle = 'black';
                 break;
+            case 'KeyO':
+                pcState.fillStyle = 'orange';
+                break;
+            case 'KeyP':
+                pcState.fillStyle = 'purple';
+                break;
             case 'ArrowLeft':
                 pcState.x = clamp(pcState.x - blockWidth, 0, screenCanvas.width - pcState.width);
                 break;
