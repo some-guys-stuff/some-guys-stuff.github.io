@@ -20,7 +20,7 @@ async function go()
 
     const pcState = 
     {
-        fillStyle: 'black',
+        fillStyle: '#FF4050',
         width: blockWidth,
         height: blockHeight,
         x: 0,
@@ -52,35 +52,17 @@ async function go()
     {
         switch (keyboardEvent.code)
         {
-            case 'KeyR':
-                pcState.fillStyle = 'red';
-                break;
-            case 'KeyG':
-                pcState.fillStyle = 'green';
-                break;
-            case 'KeyB':
-                pcState.fillStyle = 'blue';
-                break;
-            case 'KeyY':
-                pcState.fillStyle = 'yellow';
-                break;
-            case 'KeyK':
-                pcState.fillStyle = 'black';
-                break;
-            case 'KeyO':
-                pcState.fillStyle = '#ff8000';
-                break;
-            case 'KeyP':
-                pcState.fillStyle = '#8000ff';
-                break;
-            case 'ArrowLeft':
+            case 'KeyA':
                 pcState.x = clamp(pcState.x - blockWidth, 0, screenCanvas.width - pcState.width);
                 break;
-            case 'ArrowRight':
+            case 'KeyD':
                 pcState.x = clamp(pcState.x + blockWidth, 0, screenCanvas.width - pcState.width);
                 break;
-            case 'ArrowDown':
+            case 'KeyS':
                 pcState.y = clamp(pcState.y + blockHeight, 0, screenCanvas.height - pcState.height);
+                break;
+            case 'KeyW':
+                pcState.y = screenCanvas.height - pcState.height
                 break;
         }
     });
