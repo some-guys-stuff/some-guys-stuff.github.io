@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6o-|+674</title>
+</head>
+<body>
+    <input type="text" id="thingtotranslate" value=""/>
+    <button id="translate">-|+64;_1_{{6-.</button>
+    <div id="output"></div>
+    <script>
+        /**
+         * @param {string} str
+         */
+        function atrain(str) {
+            return str.replaceAll("p", "|").replaceAll("r", "|+").replaceAll("o", "*").replaceAll(" ", "o").replaceAll("q", "*+").replaceAll("t", "-").replaceAll("x", "👍").replaceAll("z", "/").replaceAll("m", "}{").replaceAll("l", "{{").replaceAll("k", "{}").replaceAll("j", "}}").replaceAll("g", "?").replaceAll("f", "!").replaceAll("e", ".").replaceAll("c", "🙁>").replaceAll("b", "<🙂").replaceAll("i", "7").replaceAll("a", "6").replaceAll("d", "5").replaceAll("n", "4").replaceAll("u", "3").replaceAll("v", "3'").replaceAll("w", "3&3").replaceAll("y", "2").replaceAll("h", "1").replaceAll("s", ";_1_").replaceAll("ss", ";_2_").replaceAll("sss", ";_3_").replaceAll("ssss", ";_4_")
+        }
+        let v = ""
+        const button = /** @type {HTMLButtonElement} */(document.getElementById("translate"))
+        const input = /** @type {HTMLInputElement} */(document.getElementById("thingtotranslate"));
+        const output = /** @type {HTMLDivElement} */(document.getElementById("output"));
+        
+        button.addEventListener("click", function (pointerEvent) {
+            v = input.value
+            output.innerText = atrain(v).toUpperCase()
+        });
+    </script>
+</body>
+</html>
